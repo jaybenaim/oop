@@ -28,13 +28,10 @@ class Player:
             elif self.lives <= 0: 
                 self.restart() 
         
-            
-
     def restart(self): 
         self.gold_coins = 0 
         self.health_points = 10 
         self.lives = 5 
-
 
 
 new_player1 = Player() 
