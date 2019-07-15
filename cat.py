@@ -9,7 +9,7 @@ class Cat:
     def __str__(self): 
         return f'Name: {self.name}, Preferred Food: {self.preferred_food}, Meal Time: {self.meal_time}'
     def eats_at(self): 
-        if self.meal_time < 12: 
+        if self.meal_time > 0 and self.meal_time < 12: 
             return f'{self.name} eats at {self.meal_time} AM'
         elif self.meal_time > 12 and self.meal_time < 24: 
             return f'{self.name} eats at {self.meal_time} PM'
@@ -24,13 +24,13 @@ class Cat:
             return "Something went wrong" 
 
 moo = Cat('Moo', 'Salmon-tuna', 7) 
-print(moo) 
-pete = Cat('Pete', 'Whitefish-tuna', 14)
-print(pete) 
-print(moo.eats_at())
-print(pete.eats_at())
-print(moo.meow())
-print(pete.meow())
+# print(moo) 
+# pete = Cat('Pete', 'Whitefish-tuna', 14)
+# print(pete) 
+# print(moo.eats_at())
+# print(pete.eats_at())
+# print(moo.meow())
+# print(pete.meow())
 
 
 
