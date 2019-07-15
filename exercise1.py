@@ -17,15 +17,32 @@ class BankAccount:
     def withdraw(self, amount): 
         self.balance -= amount 
         return self.balance 
-    
-jays = BankAccount(433, 10) 
-print(jays)
-print(jays.balance) 
 
-jays.deposit(222)
-print(jays.balance)
-jays.withdraw(600) 
-print(jays.balance) 
+    def gain_interest(self): 
+        rate = self.interest_rate / 100 
+        intr = self.balance * rate 
+        self.balance += intro 
+        return self.balance 
 
+
+# jays = BankAccount(433, 10) 
+# print(jays)
+# print(jays.balance) 
+
+# jays.deposit(222)
+# print(jays.balance)
+# jays.withdraw(555) 
+# print(jays.balance) 
+
+# jays.gain_interest() 
+# print(jays.balance)  
+
+jays2 = BankAccount(500, 10)
+jays2.gain_interest()  
+print(jays2.balance) 
+
+jays3 = BankAccount(1000, 10)
+jays3.gain_interest()  
+print(jays3.balance) 
 
 
