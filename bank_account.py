@@ -21,7 +21,7 @@ class BankAccount:
     def gain_interest(self): 
         rate = self.interest_rate / 100 
         intr = self.balance * rate 
-        self.balance += intro 
+        self.balance += intr 
         return self.balance 
 
 
